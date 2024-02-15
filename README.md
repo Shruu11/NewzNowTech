@@ -1,0 +1,2 @@
+# NewzNowTech
+NewzNowTech startup website 
