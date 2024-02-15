@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+    <title>NewzNowTech</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>NewzNowTech</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="News.png" type="image/x-icon">
+</head>
+<body>
+    
+
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on navbar height */
+        }
+
+        .navbar {
+            transition: top 0.3s;
+        }
+
+        .navbar.hidden {
+            top: -56px; /* Set to negative navbar height */
+        }
+
+        .navbar.fixed-top {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+        <div class="container">
+            <!--logo with image-->
+            <a class="navbar-brand fs-4" href="index.html">
+                <img src="NewsNowTech.png" alt="Logo" height="40" width="190" class="rounded">
+            </a>
+            <!-- toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- sidebar-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- sidebar header-->
+                <div class="offcanvas-header text-dark border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
+                    <button type="button" class="btn-close btn-close-dark shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- SIDE BAR BODY-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 fs-6 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Startups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Funding</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Technology</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Employment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-1 justify-content-center align-items-center" role="Search">
+                        <input class="form-control me-2" type="Search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">🔍</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+
+        let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector('.navbar').classList.remove('hidden');
+    } else {
+        document.querySelector('.navbar').classList.add('hidden');
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+    </script>
+
+
+
+
+    <div class="container my-5">
+        <h1 class="fst-normal">Top News</h1>
+        <div class="recent-updates my-3 p-3 bg-body rounded shadow-sm">
+            <h6 class="border-bottom pb-2 mb-0"><b>15 Feb 2024</b></h6>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-75530,msid-107696481,width-140,height-105/it-services-firm-prodapt-appoints-former-tech-mahindra-exec-manish-vyas.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>IT services firm Prodapt appoints former Tech Mahindra exec Manish Vyas </mark> </strong>
+                    Vyas, who joins Chennai-headquartered Prodapt after a 23-year-plus tenure at Tech Mahindra, will guide the leadership team to drive strategic initiatives, the statement by Prodapt said. Vyas quit Tech Mahindra, India’s fifth-largest software services firm, on November 17 last year.
+                  <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-21932,msid-107689002,width-140,height-105/infosys-under-fire-for-failing-to-create-jobs-in-karnataka.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Infosys under fire for failing to create jobs in Karnataka</mark> </strong>
+                    During the Karnataka state legislature's budget session, Arvind Bellad criticizes Infosys for not delivering on job creation. Priyank Kharge suggests withdrawing incentives and land in cases of non-performance. MB Patil promises to investigate and ensures jobs at Foxconn's plant in Doddaballapur.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-922883,msid-107664664,width-140,height-105/wipro-acquires-us-insurtech-firm-aggne-global-for-66-million.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Wipro acquires US insurtech firm Aggne Global for $66 million </mark> </strong>
+                    Wipro will acquire 60% of the company in an all-cash deal, with an option to purchase the remaining stake over a period of time, as per a stock exchange filing. Revenues of the Aggne Group are $4.5 million for calendar year 2021, $9.1 million for 2022, and $17.9 million 2023.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-47896,msid-107664365,width-140,height-105/infosys-signs-multi-year-contract-with-singapores-pacific-international-lines.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Infosys signs multi-year contract with Singapore’s Pacific International Lines </mark> </strong>
+                    The multi-year, multi-phased collaboration seeks to address critical business challenges such as modernizing web and mobile applications, enhancing scalability, and providing advisory services on the latest technology and business trends, it added. Deal financials remained undisclosed.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-80994,msid-107560865,width-140,height-105/genpact-expects-fy24-revenue-to-remain-sluggish-fy23-growth-slows-to-4.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Genpact expects FY24 revenue to remain sluggish, FY23 growth slows to 4% </mark> </strong>
+                    Genpact forecasts total revenue for Q1FY24 in the range of $1.108-1.114 billion representing a modest growth of 1.75-2.25%. The growth on a constant currency basis is projected in the range of 1.95% to 2.45%. Gross margins are expected to remain flat at 35%. Full-year revenue growth is expected to remain lower in the
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-12998,msid-107482550,width-140,height-105/freshworks-cro-pradeep-rathinam-quits-abe-smith-named-global-field-operations-chief.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Freshworks CRO Pradeep Rathinam quits; Abe Smith named global field operations chief </mark> </strong>
+                    Freshworks has hired Abe Smith, former executive at Zoom, as its Chief of Global Field Operations. The company's Chief Revenue Officer, Pradeep Rathinam, will be leaving at the end of the month. Freshworks reported a 20% increase in total revenues to $160 million for Q4, with a net loss of $28 million.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-21802,msid-107695338,width-140,height-105/edtech-startup-classplus-unveils-second-esop-buyback-over-150-employees-eligible.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Edtech startup Classplus unveils second Esop buyback, over 150 employees eligible </mark> </strong>
+                    This is Classplus’ second offer in three years to repurchase shares issued under its employee stock ownership plan (Esop). More than 150 employees across roles and business verticals are eligible to sell their vested shares to the company, the edtech startup said in a news release. The youngest participant in this buyback is a 23-
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-1171641,msid-107693758,width-140,height-105/saas-startup-partners-boston-dynamics-to-deploy-humanoid-robot-at-construction-sites.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>SaaS startup partners Boston Dynamics to deploy humanoid robot at construction sites</mark> </strong>
+                    Zepth is in talks with investors to raise its first funding round in order to expand in the Americas, as well as deeper in India and the Middle East. The company's project manager app has over 40,000 downloads in India and is used by over 500 projects and 8,000 daily users.
+                    <br>
+                  <br>
+                  <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/msid-107413035,width-344,imgsize-140432,height-232,resizemode-4/tech/newsletters/full-stack/paytm-byjus-crisis-alphas-cowboys-and-the-strong-silent-types.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Paytm-Byju’s crisis: Alphas, cowboys and the strong, silent types </mark> </strong>
+                    Two of the biggest names in the Indian startup world, Paytm's Vijay Shekhar Sharma and Byju's founder Byju Raveendran, face an existential challenge to their businesses. The recent challenges faced by these founders reflect the excesses of the hyper-funding period and highlight issues of governance, compliance, and transparency.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-99628,msid-107663390,width-140,height-105/hp-discovers-rs-30-crore-worth-of-counterfeit-supplies-in-2023.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>HP discovers Rs 30 crore worth of counterfeit supplies in 2023 </mark> </strong>
+                    According to the HP Anti-Counterfeiting and Fraud (ACF) report, in this period, law enforcement authorities have removed nearly 4.4 lakh illicit items from the market, including 1 lakh being confiscated from Mumbai alone.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-22040,msid-107565018,width-140,height-105/apple-vision-pro-social-media-gets-a-taste-of-forbidden-fruit.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Apple Vision Pro: social media gets a taste of forbidden fruit </mark> </strong>
+                    The rolling waves of consumer interest that the mixed reality headset is drawing has prompted technology analysts to bill it as “the most complicated consumer device ever created.” Harmeet Singh Walia, senior analyst at Counterpoint Research reckons “this is perhaps Apple’s most important new device since at least
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-640542,msid-107534420,width-140,height-105/uk-based-ciklum-acquires-infogen-aims-to-double-down-on-india.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>UK-based Ciklum acquires Infogen, aims to double down on India </mark> </strong>
+                    Ciklum is one of the portfolio companies of Recognize, a technology investment platform, led by IT industry veterans including former Cognizant CEO Frank D’Souza along with Raj Mehta, Charles Phillips, and David Wasserman.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="https://img.etimg.com/thumb/imagesize-70852,msid-107311882,width-140,height-105/elon-musks-unfathomable-56-billion-tesla-pay-package.jpg" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Elon Musk’s ‘unfathomable’ $56 billion Tesla pay package </mark> </strong>
+                    Musk's 2018 compensation package created 12 tranches of options - each equivalent at the time to 1% of Tesla's outstanding shares - potentially giving him a 12% stake in the automaker. Musk would receive no salary.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="data:image/png;base64,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" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Rewards-focussed mobile browser Veera raises $6 million funding led by Ayon Capital </mark> </strong>
+                    Veera, a rewards-powered internet browser, raised $6 million in a seed-funding round led by Ayon Capital. The browser, launched in September 2023, has crossed 100,000 users. Founder and CEO Arjun Ghose aims to solidify Veera's position as the preferred browser for Indian internet users.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+
+                </p>
+            </div>
+            <br>
+            <div class="d-flex text-body-secondary pt-3">
+                <img src="data:image/jpeg;base64,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" alt="User Image 2">
+                <p class="pb-3 mb-0 small lh-sm border-bottom">
+                    <strong class="d-block text-gray-dark fs-4 mb-2"> <mark>Explurger raises $4.5 million in funding round led by Affle </mark> </strong>
+                    The freshly acquired funds will be used for scaling up future growth initiatives and fostering community development through the integration of newer technologies such as artificial intelligence, the company said.
+                    <br>
+                    <br>
+                    <a href="">Source</a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <div class="container mx-auto my-4"> <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top"> <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 NewzNowTech <a href="https://diverpulsemedia.tech/">(Diverpulse Media)</a>, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fab fa-medium"></i></a></li>
+    </ul>
+</footer>
+</div> 
+
+    
+    
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+<script src="index.js"></script>
+</body>
+</html>

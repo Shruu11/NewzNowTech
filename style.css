@@ -1,0 +1,87 @@
+.navbar-nav {
+    margin-right: 10px; /* Adjust the margin to add space between navbar items */
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust the margin to add space between individual navbar items */
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Change the font to sans-serif (use your preferred sans-serif font) */
+  }
+  
+  #neubar {
+      background: #FBF9F1;
+      box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+    }
+    
+    .nav-item .active {
+      border-radius: 6px;
+  background: #73a2d2;
+  
+    }
+    #neubar .dropdown-menu a:hover {
+      color: #ff0000
+    }
+    #neubar .nav-item {
+      margin : auto 6px;
+    }
+    #neubar a {
+    
+      padding-left:16px;
+      padding-right:16px;
+    }
+    #neubar .dropdown-menu {
+      background : #1b180f;
+      
+    }
+
+  
+  
+  
+
+  
+  
+  
+  .my-5-3d {
+    perspective: 1200px;
+    transform-style: preserve-3d;
+    width: 50%; /* Adjust the width as needed */
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Recent Updates Styles */
+  .recent-updates {
+    background-color: #f8f9fa; /* Change the background color if needed */
+  }
+  
+  .recent-updates p {
+    color: #495057; /* Change the text color if needed */
+  }
+  
+  .recent-updates svg {
+    fill: #007bff; /* Change the placeholder image color if needed */
+  }
+  
+  .recent-updates img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-right: 10px;
+  }
+  
+  
+  @media (max-width: 768px) { /* Or your preferred breakpoint */
+    .footer .col-md-4 {
+      width: auto; 
+      flex: 1;  /* Allow columns to take up equal available space */
+    }
+  }
+  
+  
+  
+  
+  
